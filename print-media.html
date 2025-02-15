@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Media</title>
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/images/about/website-logo.svg"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      .portfolio-filters {
+        margin-bottom: 20px;
+      }
+
+      .portfolio-filters a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      .portfolio-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+      .navbar .title {
+        margin-left: 30px;
+        color: #269dd1;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+        margin-right: 40px;
+      }
+      section {
+        padding: 30px 20px;
+        height: 170vh;
+      }
+      .navbtn {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        outline: none;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+
+      .section-title {
+        font-family: "Dancing Script", cursive; /* Elegant, flowing handwritten font */
+        font-weight: normal; /* Keep the natural look */
+        font-size: 50px; /* Large size for impact */
+        color: #3498db; /* Soft, elegant purple #8e44ad;*/
+        text-align: center; /* Center the title */
+        margin: 30px 0; /* Margin for spacing */
+        letter-spacing: 1px; /* Light letter spacing for readability */
+        line-height: 1.3; /* Slight line height to keep it clean */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      }
+    </style>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <!-- <div class="navbar">
+      <div class="title">PRINT MEDIA</div>
+      <div class="nav-buttons">
+        <div class="dropdown">
+          <button class="navbtn"><a href="#flyers">Flyers</a></button>
+        </div>
+        <div class="dropdown">
+          <button class="navbtn">
+            <a href="#brochures">Brochures</a>
+          </button>
+        </div>
+      </div>
+    </div> -->
+
+
+    <section id="flyers">
+    <div class="container">
+      <h1 class="section-title">Flyers/ Posters</h1>
+      <br />
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAF0PDYevFs/i8cMMRapuYG54n1fPo3-Wg/view?utm_content=DAF0PDYevFs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee972cf3f8#1"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/clothing-brand-poster.jpg"
+              alt="poster 1"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAGcbwEgKdI/IxInIAmh2NeKw_v9RIN5WA/view?utm_content=DAGcbwEgKdI&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/hotel-flyer.jpg"
+              alt="poster 2"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAF0PDYevFs/i8cMMRapuYG54n1fPo3-Wg/view?utm_content=DAF0PDYevFs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee972cf3f8#3"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/perfume-poster.jpg"
+              alt="poster 3"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAF0PDYevFs/i8cMMRapuYG54n1fPo3-Wg/view?utm_content=DAF0PDYevFs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee972cf3f8#4"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/desserts-shop-flyer.jpg"
+              alt="poster 4"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAGcexL5I38/nXu_zBDFfp0Ws8-nR3coGQ/view?utm_content=DAGcexL5I38&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h902143161d"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/music-party-flyer.jpg"
+              alt="poster 5"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAGcbznIL68/UvidXnwCWjvLRLrrGW6M_A/view?utm_content=DAGcbznIL68&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hcb7be28f28"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/antique-store-flyer.jpg"
+              alt="poster 6"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAGceHucyjs/_gjA6o18KWum61BwC0V6RA/view?utm_content=DAGceHucyjs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1f09b15a57"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/bar-flyer.jpg"
+              alt="poster 7"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+        <div class="portfolio-item">
+          <!-- <a
+            href="https://www.canva.com/design/DAF0PDYevFs/i8cMMRapuYG54n1fPo3-Wg/view?utm_content=DAF0PDYevFs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee972cf3f8#2"
+            target="_blank"
+          > -->
+            <img
+              src="assets/images/portfolio/projects/advertisments/posters/art-flyer.jpg"
+              alt="poster 8"
+            />
+            <!-- <div class="portfolio-overlay">
+              <span>View Project</span>
+            </div> -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </body>
+</html>

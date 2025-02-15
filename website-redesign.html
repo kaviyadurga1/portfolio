@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Redesign</title>
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/images/about/website-logo.svg"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        scroll-behavior: smooth;
+      }
+
+      
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      .portfolio-filters {
+        margin-bottom: 20px;
+      }
+
+      .portfolio-filters a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 60px;
+      }
+
+      .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      .portfolio-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+      }
+
+      .redesign {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+
+      .prototype-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .prototype-item{
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .prototype-item img {
+        width: 600px;
+        height: 450px;
+        display: block;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .prototype-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .prototype-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      .prototype-item:hover .prototype-overlay {
+        opacity: 1;
+      }
+
+
+      .redesign-item{
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .redesign-item img {
+        width: 450px;
+        height: 1500px;
+        display: block;
+        border-radius: 8px;
+        /* transition: transform 0.3s ease; */
+      }
+
+      .redesign-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+      }
+      
+            
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar .title {
+          margin-left: 30px;
+            color:#269dd1;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            margin-right: 40px;
+            
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: rgb(253, 250, 250);
+            min-width: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #aca9a9;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 30px 20px;
+            height: 80vh;
+        }
+        a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+</style>  
+  </head>
+  <body>
+<section id="website-redesign">
+  <div class="redesign">
+    <h1>Landing Page Redesign</h1>
+    
+    <div class="redesign-grid">
+      <div class="redesign-item">
+        <h2>Old UI</h2>
+        <br>   
+          <img
+            src="assets/images/portfolio/projects/ui-ux/redesign/Old UI.jpg"
+            alt="oldui 1"
+          />
+          <!-- <div class="portfolio-overlay">
+            <span>old UI</span>
+          </div> -->
+        </a>
+      </div>
+
+      <div class="redesign-item">
+        <h2>New UI</h2>
+        <br>
+          <img
+            src="assets/images/portfolio/projects/ui-ux/redesign/New UI.jpg"
+            alt="newui 1"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+  </body>
+</html>

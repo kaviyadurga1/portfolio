@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-UX</title>
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/images/about/website-logo.svg"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        scroll-behavior: smooth;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #ddd;
+        font-size: 18px;
+      }
+
+      /* Navigation */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .navbar .title {
+        margin-left: 30px;
+        color: #269dd1;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+        margin-right: 40px;
+      }
+
+      .dropbtn {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .dropbtn a {
+        text-decoration: none;
+        color: #151617;
+      }
+
+      /* Image-Text Layout */
+      .image-text-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 60px auto;
+        max-width: 1200px;
+        padding: 20px;
+      }
+
+      .image-text-container:nth-child(odd) {
+        flex-direction: row;
+      }
+
+      .image-text-container:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .image-text-container img {
+        width: 45%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .text-content {
+        width: 45%;
+      }
+      h4 {
+        color: #269dd1;
+      }
+
+      .button {
+        background-color: #3498db; /* Blue background */
+        color: white; /* White text */
+        font-size: 16px; /* Text size */
+        padding: 12px 24px; /* Padding */
+        border: none; /* No border */
+        border-radius: 8px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+      }
+
+      .button:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+        transform: translateY(-2px); /* Slight lift on hover */
+      }
+
+      .button:active {
+        background-color: #1d6a8d; /* Even darker blue when clicked */
+        transform: translateY(2px); /* Button presses down */
+      }
+
+      .button:focus {
+        outline: none; /* Remove outline */
+      }
+      /* Handwritten Title Style */
+      /* Elegant Handwritten Title Style */
+      /* Cursive Handwritten Title Style */
+      /* Elegant Handwritten Title Style */
+      .section-title {
+        font-family: "Dancing Script", cursive; /* Elegant, flowing handwritten font */
+        font-weight: normal; /* Keep the natural look */
+        font-size: 50px; /* Large size for impact */
+        color: #3498db; /* Soft, elegant purple #8e44ad;*/
+        text-align: center; /* Center the title */
+        margin: 30px 0; /* Margin for spacing */
+        letter-spacing: 1px; /* Light letter spacing for readability */
+        line-height: 1.3; /* Slight line height to keep it clean */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      }
+
+      .appdesign {
+        margin-top: 100px;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="title">UI / UX</div>
+      <div class="nav-buttons">
+        <button class="dropbtn">
+          <a href="#appdesign">APPLICATION DESIGNS</a>
+        </button>
+        <button class="dropbtn">
+          <a href="#website-redesign">WEBSITE DESIGNS</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Application Designs -->
+    <section class="appdesign" id="appdesign">
+      <h1 class="section-title">Application Designs</h1>
+
+      <div class="image-text-container">
+        <img
+          src="assets/images/portfolio/projects/ui-ux/app-design/money-app-mockup.png"
+          alt="Money Management App"
+        />
+        <div class="text-content">
+          <!-- <h2>Money Management App</h2> -->
+          <h4>BUDGET BUDDY</h4>
+          <p>
+            Budget Buddy is a mobile application designed for seamless way to
+            track expenses, budget smartly, and achieve financial goals with
+            ease.
+          </p>
+          <a href="money-app-case-study.html">
+            <button class="button">View Project</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="image-text-container">
+        <img
+          src="assets/images/portfolio/projects/ui-ux/app-design/retail-app-mockup.png"
+          alt="Retail App"
+        />
+        <div class="text-content">
+          <!-- <h2>Retail App</h2> -->
+          <h4>ALLURE BAY</h4>
+          <p>
+            Allure Bay is a retail mobile app that brings convenience shopping
+            experience, access exclusive deals, and enjoy smooth, fast
+            browsing—all in one seamless platform. Designed for style, speed,
+            and simplicity
+          </p>
+          <a href="retail-app-case-study.html">
+            <button class="button">View Project</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Website Redesigns -->
+    <section class="webdesign" id="website-redesign">
+      <h1 class="section-title">Website Designs</h1>
+
+      <div class="image-text-container">
+        <img
+          src="assets/images/portfolio/projects/ui-ux/redesign/desktop-mockup.png"
+          alt="Website Redesign"
+        />
+        <div class="text-content">
+          <h4>PARAGON FOOTWEAR</h4>
+          <p>
+            A modern and user-friendly redesign to improve navigation,
+            responsiveness, and engagement.
+          </p>
+          <a href="website-redesign.html">
+            <button class="button">View Project</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

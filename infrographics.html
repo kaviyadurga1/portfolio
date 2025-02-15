@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editorial Designs</title>
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/images/about/website-logo.svg"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        max-width: 800px;
+        max-height: 200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .container-newsletter {
+        max-width: 1000px;
+        max-height: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      .portfolio-filters {
+        margin-bottom: 20px;
+      }
+
+      .portfolio-filters a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 100px;
+      }
+
+      .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      
+
+      .portfolio-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+      }
+
+
+      .newsletter-filters {
+        margin-bottom: 20px;
+      }
+
+      .newsletter-filters a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .newsletter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 100px;
+      }
+
+      
+      .newsletter-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .newsletter-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      
+
+      .newsletter-item:hover img {
+        transform: scale(0.6);
+      }
+
+      .newsletter-item:hover .newsletter-overlay {
+        opacity: 1;
+      }
+
+      .newsletter-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: red;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      
+      section {
+        padding: 30px 20px;
+        height: 100vh;       
+    margin-bottom: 100px; /* Adjust the spacing between paragraphs */
+      }
+
+      /* Navigation */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .navbar .title {
+        margin-left: 30px;
+        color: #269dd1;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+        margin-right: 40px;
+      }
+
+      .dropbtn {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .dropbtn a {
+        text-decoration: none;
+        color: #151617;
+      }
+      .section-title {
+        font-family: "Dancing Script", cursive; /* Elegant, flowing handwritten font */
+        font-weight: normal; /* Keep the natural look */
+        font-size: 50px; /* Large size for impact */
+        color: #3498db; /* Soft, elegant purple #8e44ad;*/
+        text-align: center; /* Center the title */
+        margin: 30px 0; /* Margin for spacing */
+        letter-spacing: 1px; /* Light letter spacing for readability */
+        line-height: 1.3; /* Slight line height to keep it clean */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      }
+
+
+
+    </style>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="title">EDITORIAL DESIGNS</div>
+      <div class="nav-buttons">
+        <button class="dropbtn">
+          <a href="#newsletters">NEWSLETTERS</a>
+        </button>
+        <button class="dropbtn">
+          <a href="#infrographics">INFROGRAPHICS</a>
+        </button>
+      </div>
+    </div>
+
+    <section id="newsletters">
+      <div class="container">
+        <h1 class="section-title">Newsletters</h1>
+        <br />
+
+        <div class="newsletter-grid">  
+
+        <div class="newsletter-item">
+           
+          <img
+            src="assets/images/portfolio/projects/infrographics/stock-newsletter-first-page.jpg"
+            alt="newsletter 1"
+          />
+          <div class="newsletter-overlay">
+              <a><img src="assets/images/portfolio/projects/infrographics/stock-market-newsletter.jpg" alt="all pages"></a>
+          </div>
+          <div class="newsletter-overlay">
+            <a
+            href="https://www.canva.com/design/DAGd2MdX3uU/MVDMgkfdN3qU5iIt3r65mg/view?utm_content=DAGd2MdX3uU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h835bd5f1ea"
+            target="_blank"
+          >
+            <span style="color: white;">View all pages</span>
+          </a>
+          </div>  
+      </div>
+
+          <div class="newsletter-item">
+           
+            <img
+              src="assets/images/portfolio/projects/infrographics/construction-first-page.jpg"
+              alt="newsletter 2"
+            />
+            <div class="newsletter-overlay">
+                <a><img src="assets/images/portfolio/projects/infrographics/const-newsletter.jpg" alt="all pages"></a>
+            </div>
+            <div class="newsletter-overlay">
+              <a
+              href="https://www.canva.com/design/DAGd85QIu00/mLP-YseYdBljpB9yES94HA/view?utm_content=DAGd85QIu00&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd882b5b794"
+              target="_blank"
+            >
+              <span style="color: white;">View all pages</span>
+            </a>
+            </div>  
+        </div>
+        </div>
+      </div>
+    </section>
+<br>
+    <section id="infrographics">
+      <div class="container">
+        <h1 class="section-title">Infrographics</h1>
+        <br />
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <!-- <a
+              href="https://www.canva.com/design/DAGcKzAMCaw/Bls1y6iamrdVJsnR2RaHjQ/view?utm_content=DAGcKzAMCaw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbc0be92d21"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/infrographics/property-listing-roadmap.jpg"
+                alt="infrographic 1"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <!-- <a
+              href="https://www.canva.com/design/DAFy7ZpUJ_I/VVJcZGW5alCqYbkLHxLfXg/view?utm_content=DAFy7ZpUJ_I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=habe1ed4c55"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/infrographics/infrographics.png"
+                alt="infrographic 2"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+</html>

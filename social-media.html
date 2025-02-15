@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="assets/images/about/website-logo.svg"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        margin-bottom: 20px;;
+        padding: 0;
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      .portfolio-filters {
+        margin-bottom: 20px;
+      }
+
+      .portfolio-filters a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+      }
+
+      .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      .portfolio-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+      }
+
+      .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+      }
+
+      .story{
+        width: 300px;
+        height: 525px;
+      }
+      .section-title {
+        font-family: "Dancing Script", cursive; /* Elegant, flowing handwritten font */
+        font-weight: normal; /* Keep the natural look */
+        font-size: 50px; /* Large size for impact */
+        color: #3498db; /* Soft, elegant purple #8e44ad;*/
+        text-align: center; /* Center the title */
+        margin: 30px 0; /* Margin for spacing */
+        letter-spacing: 1px; /* Light letter spacing for readability */
+        line-height: 1.3; /* Slight line height to keep it clean */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      }
+      /* Navigation */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .navbar .title {
+        margin-left: 30px;
+        color: #269dd1;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+        margin-right: 40px;
+      }
+
+      .dropbtn {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .dropbtn a {
+        text-decoration: none;
+        color: #151617;
+      }
+      .post{
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .section{
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+    </style>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="title">UI / UX</div>
+      <div class="nav-buttons">
+        <button class="dropbtn">
+          <a href="#posts">AD-POSTS</a>
+        </button>
+        <button class="dropbtn">
+          <a href="#stories">AD-STORIES</a>
+        </button>
+      </div>
+    </div>
+    <section class="post" id="posts">
+      <div>
+        <h1 class="section-title">Instagram / Facebook Posts</h1>
+        <br />
+  
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/post/tshirt-ad-post.jpg"
+                alt="post 1"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+          </div>
+  
+          <div class="portfolio-item">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc#2"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/post/funiture-post.jpg"
+                alt="post 2"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+          </div>
+  
+          <div class="portfolio-item">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc#3"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/post/car-ad-post.jpg"
+                alt="post 3"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+          </div>
+
+          <div class="portfolio-item">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc#3"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/post/waffle-post.jpg"
+                alt="post 4"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+          </div>
+  
+          </div>
+    </section>
+
+    <section class="section" id="stories">
+      <div>
+        <h1 class="section-title">Instagram Stories</h1>
+        <br />
+  
+        <div class="portfolio-grid">  
+           <div class="portfolio-item story">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc#3"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/story/burger-ad.jpg"
+                alt="story 1"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+            </div>
+
+            <div class="portfolio-item story">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc#3"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/story/cafe-ad.jpg"
+                alt="story 2"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+            </div> 
+          </div>
+    </section>
+    <section class="section" id="stories">
+      <div>
+        <h1 class="section-title">Blogs</h1>
+        <br />
+  
+        <div class="portfolio-grid">  
+           <div class="portfolio-item story">
+            <!-- <a
+              href="https://www.canva.com/design/DAGd32cyfBs/C_aYq1d3PItoGKhtf12cxQ/view?utm_content=DAGd32cyfBs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2a246dbabc#3"
+              target="_blank"
+            > -->
+              <img
+                src="assets/images/portfolio/projects/social-media/blog/construction-app.jpg"
+                alt="story 1"
+              />
+              <!-- <div class="portfolio-overlay">
+                <span>View Project</span>
+              </div> -->
+            </a>
+            </div>
+          </div>
+    </section>
+  </body>
+  </body>
+</html>
