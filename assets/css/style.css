@@ -209,7 +209,21 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     position: absolute; /* Makes it independent from the flexbox centering */
     bottom: 10px; /* Moves it 20px from the bottom */
     left: 50%; /* Centers it horizontally */
-    transform: translateX(-50%); /* Adjusts it to be properly centered */
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjusts it to be properly centered */
+}
+
+ /* ✅ Mobile Responsive Adjustments */
+ @media (max-width: 768px) {
+    .welcome-hero {
+        height: 300px; /* Reduce height for smaller screens */
+        background-position: center top;
+    }
+
+    .welcome-content {
+        font-size: 24px; /* Reduce text size */
+        bottom: 10px; /* Adjust text position */
+    }
 }
 /* .welcome-hero:before{
     position:absolute;
