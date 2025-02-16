@@ -26,6 +26,8 @@ font-family: 'Poppins', sans-serif;
 		1.General css (Reset code)
 --------------------------------------*/
 
+/* @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); */
+
 
 *{
     padding: 0;
@@ -61,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 	color:white;
     font-size: 16px;
 	font-family: 'Poppins', sans-serif;
-	text-transform: capitalize;
+	/* text-transform: capitalize; */
 }
 p {
 	margin: 0;
@@ -189,16 +191,23 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
+
 .welcome-hero{
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/bg-new.png)no-repeat;
+    background:url(../images/about/bg.png)no-repeat;
     background-size:cover;
     background-position: center;
-    height:550px;
-    margin-top: 90px;;
+    height:500px;
+}
+.welcome-content{
+    color: #269dd1;
+    position: absolute; /* Makes it independent from the flexbox centering */
+    bottom: 10px; /* Moves it 20px from the bottom */
+    left: 50%; /* Centers it horizontally */
+    transform: translateX(-50%); /* Adjusts it to be properly centered */
 }
 /* .welcome-hero:before{
     position:absolute;
@@ -252,6 +261,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
 .about {
     padding: 50px 0 100px;
     background-color: black;
+    margin-top: 100px;
 }
 ul.a {
     list-style-type: disc;
