@@ -108,7 +108,7 @@ html,body{
 .top-area {
     position: relative;
     z-index: 9999;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
@@ -197,15 +197,17 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/bg.png)no-repeat;
+    background:url(../images/about/bg-updated.png)no-repeat;
     background-size:cover;
     background-position: center;
     height:500px;
 }
-.welcome-content{
-    color: #269dd1;
+
+.welcome-content p{
+    font-size: 16px;;
+    color: white;
     position: absolute; /* Makes it independent from the flexbox centering */
-    bottom: 10px; /* Moves it 20px from the bottom */
+    bottom: 20px; /* Moves it 20px from the bottom */
     left: 50%; /* Centers it horizontally */
     transform: translateX(-50%); /* Adjusts it to be properly centered */
 }
