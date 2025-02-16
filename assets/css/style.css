@@ -86,6 +86,7 @@ button {background: transparent;border: 0;}
 html,body{
     height: 100%;
 	position: relative;
+    background-color: black;
 }
 [placeholder]:focus::-webkit-input-placeholder {
   -webkit-transition: opacity 0.3s 0.3s ease; 
@@ -105,6 +106,7 @@ html,body{
 .top-area {
     position: relative;
     z-index: 9999;
+    margin-bottom: 150px;
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
@@ -195,7 +197,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     background:url(../images/about/bg-new.png)no-repeat;
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:550px;
+    margin-top: 90px;;
 }
 /* .welcome-hero:before{
     position:absolute;
