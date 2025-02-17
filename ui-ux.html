@@ -147,6 +147,50 @@
       .appdesign {
         margin-top: 100px;
       }
+
+      /* Modal Styling */
+      #fullscreenModal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+        overflow-y: auto; /* Enable vertical scrolling */
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .modal-content {
+        display: inline-block;
+        max-width: 100%;
+      }
+
+      #fullscreenImage {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #closeBtn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #2980b9;
+        color: white;
+        font-size: 20px;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      #closeBtn:hover {
+        background: darkred;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
@@ -176,17 +220,20 @@
           src="assets/images/portfolio/projects/ui-ux/app-design/money-app-mockup.png"
           alt="Money Management App"
         />
+
         <div class="text-content">
-          <!-- <h2>Money Management App</h2> -->
           <h4>BUDGET BUDDY</h4>
           <p>
-            Budget Buddy is a mobile application designed for seamless way to
+            Budget Buddy is a mobile application designed for a seamless way to
             track expenses, budget smartly, and achieve financial goals with
             ease.
           </p>
-          <a href="money-app-case-study.html">
-            <button class="button">View Project</button>
-          </a>
+          <button
+            class="button"
+            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/app-design/casestudy/money-app-casestudy.png')"
+          >
+            View Project
+          </button>
         </div>
       </div>
 
@@ -195,21 +242,44 @@
           src="assets/images/portfolio/projects/ui-ux/app-design/retail-app-mockup.png"
           alt="Retail App"
         />
+
         <div class="text-content">
-          <!-- <h2>Retail App</h2> -->
           <h4>ALLURE BAY</h4>
           <p>
-            Allure Bay is a retail mobile app that brings convenience shopping
+            Allure Bay is a retail mobile app that brings a convenient shopping
             experience, access exclusive deals, and enjoy smooth, fast
             browsing—all in one seamless platform. Designed for style, speed,
-            and simplicity
+            and simplicity.
           </p>
-          <a href="retail-app-case-study.html">
-            <button class="button">View Project</button>
-          </a>
+          <button
+            class="button"
+            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/app-design/casestudy/retail-casestudy.png')"
+          >
+            View Project
+          </button>
         </div>
       </div>
     </section>
+
+    <!-- Full-Screen Scrollable Modal -->
+    <div id="fullscreenModal">
+      <div class="modal-content">
+        <img id="fullscreenImage" />
+      </div>
+      <button id="closeBtn" onclick="closeFullScreen()">×</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function openFullScreen(imageSrc) {
+        document.getElementById("fullscreenImage").src = imageSrc;
+        document.getElementById("fullscreenModal").style.display = "block";
+      }
+
+      function closeFullScreen() {
+        document.getElementById("fullscreenModal").style.display = "none";
+      }
+    </script>
 
     <!-- Website Redesigns -->
     <section class="webdesign" id="website-redesign">
