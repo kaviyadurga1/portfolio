@@ -20,84 +20,6 @@
         color: white;
       }
 
-      .container {
-        max-width: 1500px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      h1 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 10px;
-      }
-
-      p {
-        text-align: left;
-        margin-bottom: 20px;
-        color: #666;
-      }
-
-      .portfolio-filters {
-        margin-bottom: 20px;
-      }
-
-      .portfolio-filters a {
-        margin-right: 15px;
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-      }
-
-      .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 20px;
-      }
-
-      .portfolio-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .portfolio-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.3s ease;
-      }
-
-      .portfolio-item:hover img {
-        transform: scale(1.1);
-      }
-
-      .portfolio-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        color: white;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-      }
-
-      .portfolio-item:hover .portfolio-overlay {
-        opacity: 1;
-      }
-
-      .story{
-        width: 300px;
-        height: 525px;
-      }
       .section-title {
         font-family: "Dancing Script", cursive; /* Elegant, flowing handwritten font */
         font-weight: normal; /* Keep the natural look */
@@ -150,15 +72,70 @@
         text-decoration: none;
         color: #151617;
       }
-      .post{
-        margin-top: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
+
+      .container {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px;
       }
+
+      h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+        margin-bottom: 20px;
+        color: #666;
+      }
+
+      .portfolio-filters {
+        margin-bottom: 20px;
+      }
+
+      .portfolio-filters a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+      }
+
+      .portfolio-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .portfolio-item img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
       .section{
         margin-top: 100px;
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .story{
+        width: 100%;
+        height: 100%;
+      }
+
+      .blog{
+        width: 550px;
+        height: 800px;
       }
     </style>
     <link
@@ -181,12 +158,21 @@
         </button>
       </div>
     </div>
-    <section class="post" id="posts">
+    <section class="section" id="posts">
       <div>
         <h1 class="section-title">Instagram / Facebook Posts</h1>
         <br />
   
         <div class="portfolio-grid">
+
+          <div class="portfolio-item">
+            <img
+              src="assets/images/portfolio/projects/social-media/post/car-ad-post.jpg"
+              alt="post 3"
+            />
+          </a>
+        </div>
+
           <div class="portfolio-item">
               <img
                 src="assets/images/portfolio/projects/social-media/post/tshirt-ad-post.jpg"
@@ -203,13 +189,7 @@
             </a>
           </div>
   
-          <div class="portfolio-item">
-              <img
-                src="assets/images/portfolio/projects/social-media/post/car-ad-post.jpg"
-                alt="post 3"
-              />
-            </a>
-          </div>
+          
 
           <div class="portfolio-item">
               <img
@@ -224,33 +204,58 @@
 
     <section class="section" id="stories">
       <div>
-        <h1 class="section-title">Instagram Stories</h1>
+        <h1 class="section-title">Digital Ads / posters</h1>
         <br />
   
         <div class="portfolio-grid">  
-           <div class="portfolio-item story">
-              <img
-                src="assets/images/portfolio/projects/social-media/story/burger-ad.jpg"
-                alt="story 1"
-              />
-            </a>
-            </div>
 
-            <div class="portfolio-item story">
-              <img
-                src="assets/images/portfolio/projects/social-media/story/cafe-ad.jpg"
-                alt="story 2"
-              />
-            </a>
-            </div>
-            <div class="portfolio-item story">
+              <div class="portfolio-item story">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/travel-ad.png"
-                  alt="story 2"
+                  alt="poster 1"
                 />
-                
               </a>
-              </div> 
+              </div>
+
+              <div class="portfolio-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/music-party-flyer.png"
+                  alt="poster 2"
+                />
+              </a>
+              </div>
+              <div class="portfolio-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/burger-ad.png"
+                  alt="poster 3"
+                />
+              </a>
+              </div>
+  
+              <div class="portfolio-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/cafe-ad.png"
+                  alt="poster 4"
+                />
+              </a>
+              </div>
+
+              <div class="portfolio-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/perfume-poster.jpg"
+                  alt="poster 5"
+                />
+              </a>
+            </div>
+              <div class="portfolio-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/bar-flyer.jpg"
+                  alt="poster 6"
+                />
+              </a>
+              </div>
+
+              
           </div>
     </section>
     <section class="section" id="Blogs">
@@ -259,7 +264,7 @@
         <br />
   
         <div class="portfolio-grid">  
-           <div class="portfolio-item story">
+           <div class="portfolio-item blog">
               <img
                 src="assets/images/portfolio/projects/social-media/blog/construction-app.jpg"
                 alt="story 1"
