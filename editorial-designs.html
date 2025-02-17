@@ -45,64 +45,6 @@
         color: #666;
       }
 
-      .portfolio-filters {
-        margin-bottom: 20px;
-      }
-
-      .portfolio-filters a {
-        margin-right: 15px;
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-      }
-
-      .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 100px;
-      }
-
-      .portfolio-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      .portfolio-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.3s ease;
-      }
-
-      
-
-      .portfolio-item:hover img {
-        transform: scale(1.1);
-      }
-
-      .portfolio-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        color: white;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-      }
-
-      .portfolio-item:hover .portfolio-overlay {
-        opacity: 1;
-      }
-
 
       .newsletter-filters {
         margin-bottom: 20px;
@@ -161,6 +103,19 @@
         font-size: 1.2rem;
         text-transform: uppercase;
       }
+      .newsletter-overlay a {
+  text-decoration: none; /* Remove underline */
+}
+
+.newsletter-overlay a span {
+  color: rgb(255, 255, 255); /* Make the text black */
+}
+
+.newsletter-overlay a:hover span,
+.newsletter-overlay a:active span {
+  color: rgb(255, 255, 255); /* Keep the text black even when hovered or clicked */
+}
+
 
       
       section {
@@ -262,9 +217,8 @@
           <div class="newsletter-overlay">
             <a
             href="stockmarket-newletter.html"
-            target="_blank"
           >
-            <span style="color: white;">View all pages</span>
+            <span>View all pages</span>
           </a>
           </div>  
       </div>
@@ -280,7 +234,7 @@
             </div>
             <div class="newsletter-overlay">
               <a href="construction-newsletter.html">
-                <span style="color: white;">View all pages</span>
+                <span>View all pages</span>
               </a>
             </div>  
         </div>
