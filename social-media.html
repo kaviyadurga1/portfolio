@@ -124,46 +124,86 @@
 
 
       .poster-filters {
-        margin-bottom: 20px;
-      }
+    margin-bottom: 20px;
+}
 
-      .poster-filters a {
-        margin-right: 15px;
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-      }
+.poster-filters a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
 
-      .poster-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-      }
+.poster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-fit adjusts based on screen size */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
-      .poster-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
+/* Ensures proper scaling of images */
+.poster-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-      .poster-item img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        transition: transform 0.3s ease;
-      }
+.poster-item img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Prevents image from being too tall */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    transition: transform 0.3s ease;
+}
 
-      .section{
-        margin-top: 100px;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
+/* Section spacing */
+.section {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-      .story{
-        max-width: 100%;
-        height: 600px;
-      }
+/* Adjusts image height for better responsiveness */
+.story {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Ensures proportional scaling */
+    max-height: 600px;
+}
+
+/* ✅ Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+    .poster-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+        gap: 15px;
+    }
+
+    .poster-item img {
+        max-height: 400px; /* Reduce height for mobile */
+    }
+
+    .section {
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .poster-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .poster-item img {
+        max-height: 300px; /* Further reduce height for smaller screens */
+    }
+}
+
 
       .blog{
         width: 550px;
@@ -244,22 +284,16 @@
               <div class="poster-item story">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/travel-ad.png"
-                  alt="poster 1"
+                  alt="travel ad"
                 />
               </a>
               </div>
 
-              <div class="poster-item story">
-                <img
-                  src="assets/images/portfolio/projects/social-media/story/music-party-flyer.png"
-                  alt="poster 2"
-                />
-              </a>
-              </div>
+              
               <div class="poster-item story">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/burger-ad.png"
-                  alt="poster 3"
+                  alt="burger ad"
                 />
               </a>
               </div>
@@ -267,7 +301,31 @@
               <div class="poster-item story">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/cafe-ad.png"
-                  alt="poster 4"
+                  alt="cafe ad"
+                />
+              </a>
+              </div>
+
+              <div class="poster-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/sale-ad.gif"
+                  alt="fashion ad"
+                />
+              </a>
+              </div>
+
+              <div class="portfolio-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/bar-flyer.jpg"
+                  alt="bar ad"
+                />
+              </a>
+              </div>
+              
+              <div class="poster-item story">
+                <img
+                  src="assets/images/portfolio/projects/social-media/story/music-party-flyer.png"
+                  alt="concert ad"
                 />
               </a>
               </div>
@@ -275,21 +333,14 @@
               <div class="portfolio-item story">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/perfume-poster.jpg"
-                  alt="poster 5"
+                  alt="perfume ad"
                 />
               </a>
-            </div>
-              <div class="portfolio-item story">
-                <img
-                  src="assets/images/portfolio/projects/social-media/story/bar-flyer.jpg"
-                  alt="poster 6"
-                />
-              </a>
-              </div>
-
-              
+            </div>    
           </div>
     </section>
+
+
     <section class="section" id="Blogs">
       <div>
         <h1 class="section-title">Blogs</h1>

@@ -108,7 +108,7 @@ html,body{
 .top-area {
     position: relative;
     z-index: 9999;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
@@ -192,39 +192,59 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
         3.  Welcome-hero
 --------------------------------------*/
 
-.welcome-hero{
+.welcome-hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
-    background:url(../images/about/bg-updated.png)no-repeat;
-    background-size:cover;
+    position: relative;
+    background: url(../images/about/bg-updated.png) no-repeat;
+    background-size: cover;
     background-position: center;
-    height:500px;
+    height: 500px;
+    text-align: center; /* Ensures content is centered properly */
+    padding: 20px; /* Adds spacing for better layout */
 }
 
-.welcome-content p{
-    font-size: 16px;;
+/* Ensures welcome content remains readable */
+.welcome-content p {
+    font-size: 18px;
     color: white;
-    position: absolute; /* Makes it independent from the flexbox centering */
-    bottom: 10px; /* Moves it 20px from the bottom */
-    left: 50%; /* Centers it horizontally */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
     transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjusts it to be properly centered */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 90%; /* Prevents text from overflowing */
 }
 
- /* ✅ Mobile Responsive Adjustments */
- @media (max-width: 768px) {
+/* ✅ Mobile Responsive Adjustments */
+@media (max-width: 768px) {
     .welcome-hero {
         height: 300px; /* Reduce height for smaller screens */
-        background-position: center top;
+        background-size: contain; /* Ensure full image is visible */
+        padding: 10px; /* Reduce padding */
     }
 
-    .welcome-content {
-        font-size: 24px; /* Reduce text size */
-        bottom: 10px; /* Adjust text position */
+    .welcome-content p {
+        font-size: 14px; /* Reduce text size */
+        bottom: 15px; /* Adjust text position */
+        max-width: 80%; /* Keep text from stretching too wide */
+        padding: 5px; /* Add padding for readability */
     }
 }
+
+/* ✅ Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+    .welcome-hero {
+        height: 250px; /* Further reduce height */
+    }
+
+    .welcome-content p {
+        font-size: 12px; /* Make text smaller */
+        bottom: 10px;
+    }
+}
+
 /* .welcome-hero:before{
     position:absolute;
     content: " ";
