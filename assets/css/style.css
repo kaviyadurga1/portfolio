@@ -192,104 +192,81 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
         3.  Welcome-hero
 --------------------------------------*/
 
-.welcome-hero {
+#welcome-hero {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
     position: relative;
-    background: url(../images/about/bg-updated.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    text-align: center; /* Ensures content is centered properly */
-    padding: 20px; /* Adds spacing for better layout */
+    overflow: hidden;
 }
 
-/* Ensures welcome content remains readable */
-.welcome-content p {
-    font-size: 18px;
+.welcome-content {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.text-layer {
+    position: relative; /* Change from absolute to relative */
+    display: block;
+    font-size: 5vw;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 10px 0; /* Adds spacing between each text */
+}
+
+
+
+.text-faded {
+    top: 42%;
+    opacity: 0.1;
+}
+
+.text-outline {
+    top: 45%;
+    color: transparent;
+    -webkit-text-stroke: 2px  #269dd1;;
+    opacity: 0.6;
+}
+
+.text-bold {
+    top: 48%;
     color: white;
+    font-size: 6vw;
+    z-index: 2;
+}
+
+.signature {
     position: absolute;
-    bottom: 20px;
+    top: 65%;
     left: 50%;
     transform: translateX(-50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    max-width: 90%; /* Prevents text from overflowing */
+    font-family: 'Dancing Script', cursive;
+    font-size: 3vw;
+    color: white;
+    z-index: 3;
 }
 
-/* ✅ Mobile Responsive Adjustments */
 @media (max-width: 768px) {
-    .welcome-hero {
-        height: 300px; /* Reduce height for smaller screens */
-        background-size: contain; /* Ensure full image is visible */
-        padding: 10px; /* Reduce padding */
+    .text-layer {
+        font-size: 7vw;
     }
-
-    .welcome-content p {
-        font-size: 14px; /* Reduce text size */
-        bottom: 15px; /* Adjust text position */
-        max-width: 80%; /* Keep text from stretching too wide */
-        padding: 5px; /* Add padding for readability */
+    .text-bold {
+        font-size: 8vw;
+    }
+    .signature {
+        font-size: 5vw;
+        top: 70%;
     }
 }
-
-/* ✅ Extra Small Screens (Phones) */
-@media (max-width: 480px) {
-    .welcome-hero {
-        height: 250px; /* Further reduce height */
-    }
-
-    .welcome-content p {
-        font-size: 12px; /* Make text smaller */
-        bottom: 10px;
-    }
-}
-
-/* .welcome-hero:before{
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(31,44,108,.65);
-    width:100%;
-    height:100%;
-} */
-
-/*.header-text-area*/
-.header-text h2 {
-    color: #fff;
-    font-size: 54px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-.header-text h2 span {color: #269dd1;}
-.header-text p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 30px 0 60px;
-    letter-spacing: 1px;
-}
-.header-text a {
-    width: 200px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 3px;
-    text-transform: capitalize;
-    color: #fff;
-    background: #269dd1;
-    border:1px solid #269dd1;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-    -webkit-transition: 0.3s linear; 
-    -moz-transition: 0.3s linear; 
-    -ms-transition: 0.3s linear; 
-    -o-transition: 0.3s linear; 
-    transition: 0.3s linear;
-}
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#269dd1;border: 1px solid #269dd1;}
-/*.header-text-area*/
 
 /*-------------------------------------
         4.  About
@@ -297,7 +274,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
 .about {
     padding: 50px 0 100px;
     background-color: black;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 ul.a {
     list-style-type: disc;
@@ -386,16 +363,7 @@ ul.a {
 .single-horizontal-timeline .timeline-content h5 { margin: 15px 0;}
 .single-horizontal-timeline p {color: #dddfe7;max-width: 335px;}
 /*.timeline-horizontal-border*/
-/* .timeline-horizontal-border {
-    display:  flex;
-    align-items: center;
-    padding: 26px 0 30px;
-} */
-/* .timeline-horizontal-border i {
-    font-size:  10px;
-    color: #269dd1;
-    margin-right:  5px;
-} */
+
 span.single-timeline-horizontal {
     display:  inline-block;
     background: #cec5b2;

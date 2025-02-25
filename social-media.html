@@ -168,13 +168,13 @@
     margin-right: 20px;
 }
 
-/* Adjusts image height for better responsiveness */
+/* Adjusts image height for better responsiveness
 .story {
     width: 100%;
     max-width: 100%;
-    height: auto; /* Ensures proportional scaling */
+    height: auto; 
     max-height: 600px;
-}
+} */
 
 /* ✅ Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
@@ -204,11 +204,32 @@
     }
 }
 
+.blog-grid {
+  display: grid;
+  
+  gap: 20px;
+}
 
-      .blog{
-        width: 550px;
-        height: 800px;
-      }
+.blog-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
     </style>
     <link
     href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
@@ -281,7 +302,7 @@
   
         <div class="poster-grid">  
 
-              <div class="poster-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/travel-ad.png"
                   alt="travel ad"
@@ -290,7 +311,7 @@
               </div>
 
               
-              <div class="poster-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/burger-ad.png"
                   alt="burger ad"
@@ -298,7 +319,7 @@
               </a>
               </div>
   
-              <div class="poster-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/cafe-ad.png"
                   alt="cafe ad"
@@ -306,7 +327,7 @@
               </a>
               </div>
 
-              <div class="poster-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/sale-ad.gif"
                   alt="fashion ad"
@@ -314,7 +335,7 @@
               </a>
               </div>
 
-              <div class="portfolio-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/bar-flyer.jpg"
                   alt="bar ad"
@@ -322,7 +343,7 @@
               </a>
               </div>
               
-              <div class="poster-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/music-party-flyer.png"
                   alt="concert ad"
@@ -330,7 +351,7 @@
               </a>
               </div>
 
-              <div class="portfolio-item story">
+              <div class="portfolio-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/perfume-poster.jpg"
                   alt="perfume ad"
@@ -343,19 +364,31 @@
 
     <section class="section" id="Blogs">
       <div>
-        <h1 class="section-title">Blogs</h1>
+        <h1 class="section-title">Blogs / Blog posts</h1>
         <br />
-  
-        <div class="portfolio-grid">  
-           <div class="portfolio-item blog">
-              <img
-                src="assets/images/portfolio/projects/social-media/blog/construction-app.jpg"
-                alt="story 1"
-              />
-            </a>
-            </div>
+    
+        <div class="blog-grid">
+          <div class="blog-item">
+            <img
+              src="assets/images/portfolio/projects/social-media/blog/real-blog-all.png"
+              alt="blog 1"
+              
+            />
           </div>
+    
+          <!-- <div class="blog-item">
+            <img
+              src="assets/images/portfolio/projects/social-media/blog/Real-estate-blog.png"
+              alt="blog 2"
+              
+            />
+          </div> -->
+        </div>
+      </div>
     </section>
+    
+    
+    
   </body>
   </body>
 </html>
