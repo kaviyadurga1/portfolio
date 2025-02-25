@@ -195,7 +195,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
 #welcome-hero {
     margin: 0;
     padding: 0;
-    background: #111;
+    background: url(../images/about/BG-WEL.png) no-repeat center center;
+    background-size: cover;
+    background-position: center center;
     color: white;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -205,6 +207,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     height: 100vh;
     position: relative;
     overflow: hidden;
+    padding: 0 15px; /* Added padding for mobile screens */
 }
 
 .welcome-content {
@@ -212,61 +215,70 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     width: 90%;
     max-width: 1200px;
     text-align: center;
+    padding: 0 10px; /* Added padding for better spacing */
 }
 
 .text-layer {
-    position: relative; /* Change from absolute to relative */
+    position: relative;
     display: block;
-    font-size: 5vw;
-    font-weight: 700;
+    font-size: 10vw; /* Using viewport width for responsive text size */
+    font-weight: 900;
     white-space: nowrap;
-    margin: 10px 0; /* Adds spacing between each text */
+    margin: 10px 0;
 }
 
 
 
-.text-faded {
-    top: 42%;
-    opacity: 0.1;
-}
 
 .text-outline {
     top: 45%;
     color: transparent;
-    -webkit-text-stroke: 2px  #269dd1;;
+    -webkit-text-stroke: 2px  #ffffff;
     opacity: 0.6;
-}
-
-.text-bold {
-    top: 48%;
-    color: white;
-    font-size: 6vw;
-    z-index: 2;
 }
 
 .signature {
     position: absolute;
-    top: 65%;
+    top: 70%; /* Adjusted for better mobile positioning */
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Dancing Script', cursive;
-    font-size: 3vw;
+    font-family: 'Sacramento', cursive;
+    font-size: calc(3vw + 15px); /* Dynamically adjust signature font size */
     color: white;
     z-index: 3;
 }
 
+/* For extra large screens */
+@media (min-width: 1600px) {
+    .text-layer {
+        font-size: 7vw; /* Smaller font size on large screens */
+    }
+}
+/* For tablets and smaller screens */
+
+
+
 @media (max-width: 768px) {
     .text-layer {
-        font-size: 7vw;
+        font-size: 12vw; /* Larger font size for tablet screens */
     }
-    .text-bold {
-        font-size: 8vw;
-    }
+    
     .signature {
         font-size: 5vw;
         top: 70%;
     }
 }
+
+@media (max-width: 480px) {
+    .text-layer {
+        font-size: 15vw; /* Larger font size for small screens */
+    }
+    .signature {
+        font-size: 6vw; /* Larger signature font size on smaller screens */
+        top: 75%; /* Adjust signature position */
+    }
+}
+
 
 /*-------------------------------------
         4.  About
