@@ -197,7 +197,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     padding: 0;
     background: url(../images/about/BG-WEL.png) no-repeat center center;
     background-size: cover;
-    background-position: center center;
     color: white;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -205,78 +204,72 @@ nav.navbar.bootsnav .navbar-toggle i{color: #269dd1;}
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative;
-    overflow: hidden;
-    padding: 0 15px; /* Added padding for mobile screens */
+    padding: 0 15px;
+    flex-direction: column;
 }
 
 .welcome-content {
-    position: relative;
     width: 90%;
     max-width: 1200px;
     text-align: center;
-    padding: 0 10px; /* Added padding for better spacing */
+    padding: 0 10px;
 }
 
 .text-layer {
-    position: relative;
-    display: block;
-    font-size: 10vw; /* Using viewport width for responsive text size */
+    font-size: 10vw;
     font-weight: 900;
     white-space: nowrap;
     margin: 10px 0;
 }
 
-
-
-
 .text-outline {
-    top: 45%;
     color: transparent;
-    -webkit-text-stroke: 2px  #ffffff;
+    -webkit-text-stroke: 2px #ffffff;
     opacity: 0.6;
 }
 
 .signature {
-    position: absolute;
-    top: 70%; /* Adjusted for better mobile positioning */
-    left: 50%;
-    transform: translateX(-50%);
     font-family: 'Sacramento', cursive;
-    font-size: calc(3vw + 15px); /* Dynamically adjust signature font size */
+    font-size: calc(3vw + 15px);
     color: white;
-    z-index: 3;
+    margin-top: 30px;
 }
 
-/* For extra large screens */
-@media (min-width: 1600px) {
-    .text-layer {
-        font-size: 7vw; /* Smaller font size on large screens */
-    }
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-/* For tablets and smaller screens */
 
+button {
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
 
+button:hover {
+    background-color: #313336;
+    color: white;
+}
 
 @media (max-width: 768px) {
-    .text-layer {
-        font-size: 12vw; /* Larger font size for tablet screens */
-    }
-    
-    .signature {
-        font-size: 5vw;
-        top: 70%;
-    }
+    .text-layer { font-size: 12vw; }
+    .signature { font-size: 5vw; }
+    button { font-size: 14px; padding: 10px 25px; }
 }
 
 @media (max-width: 480px) {
-    .text-layer {
-        font-size: 15vw; /* Larger font size for small screens */
-    }
-    .signature {
-        font-size: 6vw; /* Larger signature font size on smaller screens */
-        top: 75%; /* Adjust signature position */
-    }
+    .text-layer { font-size: 15vw; }
+    .signature { font-size: 6vw; }
+    .buttons { flex-direction: column; align-items: center; }
+    button { font-size: 16px; padding: 12px 25px; width: 90%; }
 }
 
 
@@ -568,6 +561,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     display: block;
     clear: both;
 }
+
+
 .isotope .item {
     position:relative;
     overflow:hidden;
@@ -629,7 +624,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1);
     top:0;
     color: #ecedf1;
-}/*.isotope-overlay*/
+}
+/*.isotope-overlay*/
 
 
 /*-------------------------------------
