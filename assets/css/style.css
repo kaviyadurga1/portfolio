@@ -795,22 +795,23 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 
-button {
-    width: 90%; /* Adjust width to fit nicely */
-    max-width: 400px; /* Prevents oversized buttons */
-    padding: 12px 20px; /* Improves button height */
-    font-size: 16px; /* Ensures readable text */
-    margin: 10px auto; /* Adds spacing and centers */
-    border-radius: 25px; /* Optional: Rounded edges for a sleek look */
-    display: block; /* Ensures full-width alignment */
-    text-align: center;
-    background-color: #fff; /* Adjust as needed */
-    border: 2px solid #000; /* Adjust for contrast */
+.button{
+    width: auto; /* Auto width instead of full width */
+    max-width: 150px; /* Adjust as needed */
+    padding: 10px 15px; /* Reduce padding for a compact look */
+    font-size: 14px; /* Adjust font size */
+    position: absolute; /* Positioning */
+    right: 10px; /* Push to the right corner */
+    bottom: 20px; /* Adjust spacing from the bottom */
+    border-radius: 8px; /* Slight rounding */
 }
 
+/* Ensure this applies only on mobile */
 @media (max-width: 768px) {
-    button {
-        width: 95%; /* Adjust for smaller screens */
+    .button-class {
+        right: 10px; /* Keep it in the right corner */
+        bottom: 20px; /* Adjust bottom space */
     }
 }
+
 /*========================Thank you=================
