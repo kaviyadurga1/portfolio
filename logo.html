@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logofolio</title>
+    <style>
+      /* First two images should fit within the screen */
+      .full-screen {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto; /* Center align */
+      }
+
+      /* Container for the scrollable image */
+      .scroll-container {
+        width: 80vw;
+        height: 100vh; /* Full viewport height */
+        overflow-y: auto; /* Enables vertical scrolling */
+        margin: 0 auto;
+      }
+
+      .scroll-container img {
+        width: 80vw;
+        height: auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- First image (fits within screen) -->
+    <img
+      class="full-screen"
+      src="assets/images/portfolio/projects/logofolio/first-img.png"
+      alt="First Image"
+    />
+
+    <!-- GIF (fits within screen) -->
+    <img
+      class="full-screen"
+      src="assets/images/portfolio/projects/logofolio/logo-gif-dark.gif"
+      alt="Logo GIF"
+    />
+
+    <!-- Scrollable Full-width Image -->
+    <div class="scroll-container">
+      <img
+        src="assets/images/portfolio/projects/logofolio/logofolio-content.png"
+        alt="Scrollable Image"
+      />
+    </div>
+  </body>
+</html>
