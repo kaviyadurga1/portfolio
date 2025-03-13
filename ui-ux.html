@@ -70,7 +70,7 @@
 
       .dropbtn a {
         text-decoration: none;
-        color: #151617;
+        color: #269dd1;
       }
 
       /* Image-Text Layout */
@@ -105,7 +105,7 @@
       }
 
       .button {
-        background-color: #3498db; /* Blue background */
+        background-color: #269dd1; /* Blue background */
         color: white; /* White text */
         font-size: 16px; /* Text size */
         padding: 12px 24px; /* Padding */
@@ -116,12 +116,12 @@
       }
 
       .button:hover {
-        background-color: #2980b9; /* Darker blue on hover */
+        background-color: #1c689a; /* Darker blue on hover */
         transform: translateY(-2px); /* Slight lift on hover */
       }
 
       .button:active {
-        background-color: #1d6a8d; /* Even darker blue when clicked */
+        background-color: #65c5f1; /* Even darker blue when clicked */
         transform: translateY(2px); /* Button presses down */
       }
 
@@ -200,7 +200,7 @@
   <body>
     <!-- Navbar -->
     <div class="navbar">
-      <div class="title">UI / UX</div>
+      <div class="title dropbtn"><a href="index.html">UI / UX</a></div>
       <div class="nav-buttons">
         <button class="dropbtn">
           <a href="#appdesign">APPLICATION DESIGNS</a>
@@ -269,8 +269,6 @@
       <button id="closeBtn" onclick="closeFullScreen()">×</button>
     </div>
 
-    
-
     <!-- Website Redesigns -->
     <section class="webdesign" id="website-redesign">
       <h1 class="section-title">Website Designs</h1>
@@ -287,23 +285,25 @@
             responsiveness, and engagement.
           </p>
           <button
-          class="button"
-          onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/redesign/Redesign-casestudy.png')">View Project</button>
-          
+            class="button"
+            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/redesign/Redesign-casestudy.png')"
+          >
+            View Project
+          </button>
         </div>
       </div>
 
       <!-- JavaScript -->
-    <script>
-      function openFullScreen(imageSrc) {
-        document.getElementById("fullscreenImage").src = imageSrc;
-        document.getElementById("fullscreenModal").style.display = "block";
-      }
+      <script>
+        function openFullScreen(imageSrc) {
+          document.getElementById("fullscreenImage").src = imageSrc;
+          document.getElementById("fullscreenModal").style.display = "block";
+        }
 
-      function closeFullScreen() {
-        document.getElementById("fullscreenModal").style.display = "none";
-      }
-    </script>
+        function closeFullScreen() {
+          document.getElementById("fullscreenModal").style.display = "none";
+        }
+      </script>
     </section>
   </body>
 </html>
