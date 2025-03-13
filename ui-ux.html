@@ -68,6 +68,10 @@
         font-weight: bold;
       }
 
+      .dropbtn :hover {
+        color: black;
+      }
+
       .dropbtn a {
         text-decoration: none;
         color: #269dd1;
@@ -191,6 +195,13 @@
       #closeBtn:hover {
         background: darkred;
       }
+
+      .home-icon {
+        width: 24px; /* Size of the home icon */
+        height: 24px; /* Size of the home icon */
+        margin-right: 4px; /* Minimal gap between icon and title */
+        color: #269dd1;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
@@ -200,7 +211,14 @@
   <body>
     <!-- Navbar -->
     <div class="navbar">
-      <div class="title dropbtn"><a href="index.html">UI / UX</a></div>
+      <div>
+        <a href="index.html" class="home-icon">
+          <img src="assets/images/about/Home.svg" alt="home icon"
+        /></a>
+        <button class=" title dropbtn" onclick="scrollToTop()">
+          UI UX
+        </button>
+      </div>
       <div class="nav-buttons">
         <button class="dropbtn">
           <a href="#appdesign">APPLICATION DESIGNS</a>
@@ -302,6 +320,10 @@
 
         function closeFullScreen() {
           document.getElementById("fullscreenModal").style.display = "none";
+        }
+
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: "smooth" });
         }
       </script>
     </section>

@@ -46,10 +46,14 @@
       }
 
       .navbar .title {
-        margin-left: 30px;
         color: #269dd1;
         font-size: 20px;
         font-weight: bold;
+        border: none;
+        background-color: white;
+        align-content: left;
+        justify-content: left;
+        align-content: left;
       }
 
       .nav-buttons {
@@ -66,6 +70,10 @@
         cursor: pointer;
         font-size: 16px;
         font-weight: bold;
+      }
+
+      .dropbtn :hover {
+        color: black;
       }
 
       .dropbtn a {
@@ -223,12 +231,12 @@
   transition: transform 0.3s ease;
 }
 
-
-
-
-
-
-
+.home-icon {
+            width: 24px; /* Size of the home icon */
+            height: 24px; /* Size of the home icon */
+            margin-right: 4px; /* Minimal gap between icon and title */
+            color: #269dd1;
+        }
 
     </style>
     <link
@@ -238,7 +246,11 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="title dropbtn"><a href="index.html">SOCIAL MEDIA</a></div>
+      <div>
+        <a href="index.html" class="home-icon">
+          <img src="assets/images/about/Home.svg" alt="home icon"/></a>
+      <button class=" title dropbtn" onclick="scrollToTop()">SOCIAL MEDIA</button>
+      </div>
       <div class="nav-buttons">
         <button class="dropbtn">
           <a href="#posts">AD-POSTS</a>
@@ -425,8 +437,10 @@
       </div>
     </section>
     
-    
-    
   </body>
-  </body>
+  <script>
+    function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  </script>
 </html>
