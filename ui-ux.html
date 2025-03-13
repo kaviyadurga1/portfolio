@@ -11,6 +11,62 @@
       href="assets/images/about/website-logo.svg"
     />
     <style>
+      /* Navigation */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      .navbar .title {
+        color: #269dd1;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        background-color: white;
+        align-content: left;
+        justify-content: left;
+        align-content: left;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+        margin-right: 40px;
+      }
+
+      .dropbtn {
+        background-color: #ffffff;
+        color: #269dd1;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .dropbtn :hover {
+        color: black;
+      }
+
+      .dropbtn a {
+        text-decoration: none;
+        color: #269dd1;
+      }
+
+      .home-icon {
+        width: 24px; /* Size of the home icon */
+        height: 24px; /* Size of the home icon */
+        margin-right: 4px; /* Minimal gap between icon and title */
+      }
+
       body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -29,52 +85,6 @@
       p {
         color: #ddd;
         font-size: 18px;
-      }
-
-      /* Navigation */
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #ffffff;
-        padding: 15px 20px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-      }
-
-      .navbar .title {
-        margin-left: 30px;
-        color: #269dd1;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      .nav-buttons {
-        display: flex;
-        gap: 10px;
-        margin-right: 40px;
-      }
-
-      .dropbtn {
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: bold;
-      }
-
-      .dropbtn :hover {
-        color: black;
-      }
-
-      .dropbtn a {
-        text-decoration: none;
-        color: #269dd1;
       }
 
       /* Image-Text Layout */
@@ -194,13 +204,6 @@
 
       #closeBtn:hover {
         background: darkred;
-      }
-
-      .home-icon {
-        width: 24px; /* Size of the home icon */
-        height: 24px; /* Size of the home icon */
-        margin-right: 4px; /* Minimal gap between icon and title */
-        color: #269dd1;
       }
     </style>
     <link
