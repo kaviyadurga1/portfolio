@@ -121,7 +121,7 @@
 
       .portfolio-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
       }
 
@@ -134,8 +134,9 @@
 
       .portfolio-item img {
         width: 100%;
-        height: 100%;
-        max-height: 450px;
+    height: 100%;
+    max-width: 400px;
+        max-height: 400px;
         display: block;
         transition: transform 0.3s ease;
       }
@@ -174,7 +175,7 @@
 .poster-item img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Prevents image from being too tall */
+    max-height: 600px; /* Prevents image from being too tall */
     object-fit: cover; /* Ensures images cover the area without distortion */
     transition: transform 0.3s ease;
 }
@@ -186,13 +187,7 @@
     margin-right: 20px;
 }
 
-/* Adjusts image height for better responsiveness
-.story {
-    width: 100%;
-    max-width: 100%;
-    height: auto; 
-    max-height: 600px;
-} */
+
 
 /* ✅ Mobile-Friendly Adjustments */
 @media (max-width: 768px) {
@@ -202,7 +197,7 @@
     }
 
     .poster-item img {
-        max-height: 400px; /* Reduce height for mobile */
+        max-height: 800px; /* Reduce height for mobile */
     }
 
     .section {
@@ -218,7 +213,7 @@
     }
 
     .poster-item img {
-        max-height: 300px; /* Further reduce height for smaller screens */
+        max-height: 600px; /* Further reduce height for smaller screens */
     }
 }
 
@@ -319,7 +314,7 @@
   
         <div class="poster-grid">  
 
-              <div class="portfolio-item">
+              <div class="poster-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/travel-ad.png"
                   alt="travel ad"
@@ -328,7 +323,7 @@
               </div>
 
               
-              <div class="portfolio-item">
+              <div class="poster-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/burger-ad.png"
                   alt="burger ad"
@@ -336,7 +331,7 @@
               </a>
               </div>
 
-              <div class="portfolio-item">
+              <div class="poster-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/sale-ad.gif"
                   alt="fashion ad"
@@ -344,7 +339,7 @@
               </a>
               </div>
   
-              <div class="portfolio-item">
+              <div class="poster-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/cafe-ad.png"
                   alt="cafe ad"
@@ -352,7 +347,7 @@
               </a>
               </div>
               
-              <div class="portfolio-item">
+              <div class="poster-item">
                 <img
                   src="assets/images/portfolio/projects/social-media/story/hotel-flyer.jpg"
                   alt="concert ad"
@@ -360,7 +355,7 @@
               </a>
               </div>
 
-          <div class="portfolio-item">
+          <div class="poster-item">
             <img
               src="assets/images/portfolio/projects/social-media/story/music-party-flyer.png"
               alt="perfume ad"
@@ -368,7 +363,7 @@
           </a>
         </div> 
 
-        <div class="portfolio-item">
+        <div class="poster-item">
           <img
             src="assets/images/portfolio/projects/social-media/story/desserts-shop-flyer.jpg"
             alt="bar ad"
@@ -376,7 +371,7 @@
         </a>
         </div>
 
-        <div class="portfolio-item">
+        <div class="poster-item">
           <img
             src="assets/images/portfolio/projects/social-media/story/perfume-poster.jpg"
             alt="perfume ad"
@@ -384,7 +379,7 @@
         </a>
       </div>
 
-        <div class="portfolio-item">
+        <div class="poster-item">
           <img
             src="assets/images/portfolio/projects/social-media/story/bar-flyer.jpg"
             alt="perfume ad"
@@ -392,14 +387,14 @@
         </a>
       </div> 
 
-        <div class="portfolio-item">
+        <div class="poster-item">
           <img
             src="assets/images/portfolio/projects/social-media/story/antique-store-flyer.jpg"
             alt="perfume ad"
           />
         </a>
       </div> 
-      <div class="portfolio-item">
+      <div class="poster-item">
         <img
           src="assets/images/portfolio/projects/social-media/story/art-flyer.jpg"
           alt="perfume ad"
