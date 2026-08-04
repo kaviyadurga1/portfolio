@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -126,7 +126,9 @@
         border: none; /* No border */
         border-radius: 8px; /* Rounded corners */
         cursor: pointer; /* Pointer cursor on hover */
-        transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+        transition:
+          background-color 0.3s ease,
+          transform 0.2s ease; /* Smooth transition */
       }
 
       .button:hover {
@@ -147,7 +149,8 @@
       /* Cursive Handwritten Title Style */
       /* Elegant Handwritten Title Style */
       .section-title {
-        font-family: "Dancing Script", cursive; /* Elegant, flowing handwritten font */
+        font-family:
+          "Dancing Script", cursive; /* Elegant, flowing handwritten font */
         font-weight: normal; /* Keep the natural look */
         font-size: 50px; /* Large size for impact */
         color: #3498db; /* Soft, elegant purple #8e44ad;*/
@@ -218,9 +221,7 @@
         <a href="index.html" class="home-icon">
           <img src="assets/images/about/Home.svg" alt="home icon"
         /></a>
-        <button class=" title dropbtn" onclick="scrollToTop()">
-          UI UX
-        </button>
+        <button class="title dropbtn" onclick="scrollToTop()">UI UX</button>
       </div>
       <div class="nav-buttons">
         <button class="dropbtn">
@@ -238,7 +239,7 @@
 
       <div class="image-text-container">
         <img
-          src="assets/images/portfolio/projects/ui-ux/app-design/money-app-mockup.png"
+          src="assets/images/portfolio/projects/ui-ux/app-design/money-app-mockup_img.png"
           alt="Money Management App"
         />
 
@@ -251,7 +252,11 @@
           </p>
           <button
             class="button"
-            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/app-design/casestudy/money-app-casestudy.png')"
+            onclick="
+              openFullScreen(
+                'assets/images/portfolio/projects/ui-ux/app-design/casestudy/money-app-casestudy.png',
+              )
+            "
           >
             View Project
           </button>
@@ -274,7 +279,11 @@
           </p>
           <button
             class="button"
-            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/app-design/casestudy/retail-casestudy.png')"
+            onclick="
+              openFullScreen(
+                'assets/images/portfolio/projects/ui-ux/app-design/casestudy/retail-casestudy.png',
+              )
+            "
           >
             View Project
           </button>
@@ -312,7 +321,11 @@
           </p>
           <button
             class="button"
-            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/website/casestudy.png')"
+            onclick="
+              openFullScreen(
+                'assets/images/portfolio/projects/ui-ux/website/casestudy.png',
+              )
+            "
           >
             View Project
           </button>
@@ -335,7 +348,11 @@
           </p>
           <button
             class="button"
-            onclick="openFullScreen('assets/images/portfolio/projects/ui-ux/redesign/Redesign-casestudy.png')"
+            onclick="
+              openFullScreen(
+                'assets/images/portfolio/projects/ui-ux/redesign/Redesign-casestudy.png',
+              )
+            "
           >
             View Project
           </button>
